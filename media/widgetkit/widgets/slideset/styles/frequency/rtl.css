@@ -1,0 +1,29 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * RTL Style Sheet
+ */
+
+.wk-slideset-frequency .nav.icon li {
+	margin-left: 0;
+	margin-right: 8px;
+}
+.wk-slideset-frequency .nav.text li {
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+.wk-slideset-frequency .nav li:first-child { margin-right: 0; }
+
+.wk-slideset-frequency:hover > div .next:before { background-position: 0 0; }
+.wk-slideset-frequency:hover > div .prev:before { background-position: 0 -25px; }
+
+
+.wk-slideset-frequency:hover > div .next { 
+	right: auto;
+	left: 10px;
+}
+.wk-slideset-frequency:hover > div .prev { 
+	left: auto;
+	right: 10px;
+}

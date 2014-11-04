@@ -1,0 +1,134 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Widgetkit Slideset: frequency Style
+ */
+
+
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideset-frequency .nav {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.wk-slideset-frequency .nav li { 
+	display: inline-block;
+	padding: 4px;
+	border-radius: 50%;
+	background-color: #7d7d7d;
+	background-image: url(images/grunge_bg.png);
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.wk-slideset-frequency .nav.icon span {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+}
+
+.wk-slideset-frequency .nav.icon li { margin-left: 8px; }
+.wk-slideset-frequency .nav.text li { margin-left: 5px; }
+
+.wk-slideset-frequency .nav li:first-child { margin-left: 0; }
+
+.wk-slideset-frequency .nav.text li { 
+	min-width: 24px;
+	border-radius: 3px;
+	background-color: #7d7d7d;
+	color: #fff;
+}
+
+.wk-slideset-frequency .nav.text li:hover { background-color: #6d6d6d; }
+.wk-slideset-frequency .nav.text .active { background-color: #5d5d5d; }
+
+
+/* Buttons
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideset-frequency > div { position: relative; }
+
+.wk-slideset-frequency:hover > div .next,
+.wk-slideset-frequency:hover > div .prev {
+	top: 50%;
+	width: 54px;
+	height: 54px;
+	margin-top: -71px;
+	border-radius: 7px;
+	background-color: #7d7d7d;
+	background-image: url(images/grunge_bg.png);
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.wk-slideset-frequency:hover > div .next:before,
+.wk-slideset-frequency:hover > div .prev:before {
+	content:'';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -12px;
+	margin-left: -13px;
+	height: 25px;
+	width: 26px;
+	background-image: url(images/buttons.svg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.wk-slideset-frequency > div .next:hover,
+.wk-slideset-frequency > div .prev:hover,
+.wk-slideset-frequency .nav.icon li:hover { background-color: #6d6d6d; }
+
+.wk-slideset-frequency > div .next:active,
+.wk-slideset-frequency > div .prev:active,
+.wk-slideset-frequency .nav.icon .active { background-color: #5d5d5d; }
+
+.wk-slideset-frequency:hover > div .next:before { background-position: 0 -25px; }
+
+.wk-slideset-frequency:hover > div .next { right: 10px; }
+.wk-slideset-frequency:hover > div .prev { left: 10px; }
+
+.wk-slideset-frequency > div .next:hover,
+.wk-slideset-frequency > div .prev:hover { box-shadow: 0 1px 10px rgba(0,0,0,0.2) inset; }
+
+
+/* Content
+----------------------------------------------------------------------------------------------------*/
+
+.wk-slideset-frequency .sets { margin: 0 -15px; }
+
+.wk-slideset-frequency article { margin: 15px; }
+
+.wk-slideset-frequency article { border-radius: 50%; }
+
+.wk-slideset-frequency img { border-radius: 50%; }
+
+body .wk-slideset-frequency .overlay { background: none; }
+body .wk-slideset-frequency .overlay > div { background: rgba(109,109,109,0.9); }
+
+body .wk-slideset-frequency .overlay > div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	border-radius: 50%;
+}
+
+.wk-slideset-frequency .sub-content { margin-top: 20px; }
+
+
+/* Responsive
+----------------------------------------------------------------------------------------------------*/
+
+/* Only Touch Devices */
+@media (max-device-width: 1024px)  {
+
+	.wk-slideset-frequency .next,
+	.wk-slideset-frequency .prev { display: none; }
+
+}
